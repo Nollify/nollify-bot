@@ -1,6 +1,7 @@
 import { Client, GatewayIntentBits, Partials } from 'discord.js'
 import { loadEvents } from './handlers/events'
 import config from '../config.json'
+import { startDashboard } from './dashboard/dashboard'
 
 const client = new Client({
 	intents: [GatewayIntentBits.AutoModerationConfiguration, GatewayIntentBits.AutoModerationExecution, GatewayIntentBits.DirectMessageReactions, GatewayIntentBits.DirectMessageTyping, GatewayIntentBits.DirectMessages, GatewayIntentBits.GuildEmojisAndStickers, GatewayIntentBits.GuildIntegrations, GatewayIntentBits.GuildInvites, GatewayIntentBits.GuildMembers, GatewayIntentBits.GuildMessageReactions, GatewayIntentBits.GuildMessageTyping, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildModeration, GatewayIntentBits.GuildScheduledEvents, GatewayIntentBits.GuildVoiceStates, GatewayIntentBits.GuildWebhooks, GatewayIntentBits.Guilds, GatewayIntentBits.MessageContent],
@@ -8,6 +9,8 @@ const client = new Client({
 })
 
 console.clear()
-loadEvents(client)
 
+loadEvents(client)
 client.login(config.bot.token)
+
+startDashboard()
