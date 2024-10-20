@@ -1,0 +1,23 @@
+{
+  "displayName": "Nollify",
+  "name": "nollify",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "fs-extra": "^11.2.0",
+    "node-cache": "^5.1.2",
+    "table": "^6.8.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"bot": {
+		"token": "YOUR_TOKEN",
+		"id": "BOT_ID",
+		"invitation_link": "https://discord.com/oauth2/authorize?permissions=1099511627767&integration_type=0&scope=applications.commands+bot&client_id=BOT_ID"
+	},
+	"mongodb": {
+		"host": "MONGO_HOST",
+		"port": "MONGO_PORT",
+		"database": "MONGO_DATABASE",
+		"username": "MONGO_USERNAME",
+		"password": "MONGO_PASSWORD"
+	},
+	"jsonwebtoken": {
+		"secret": "YOUR_SECRET"
+	},
+	"spotify": {
+		"client_id": "SPOTIFY_CLIENT_ID",
+		"client_secret": "SPOTIFY_CLIENT_SECRET",
+		"redirect_uri": "SPOTIFY_REDIRECT_URI"
+	}
+}
